@@ -23,9 +23,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-3em&wm$j_vm*i4352b)4($2=x3t_l*nt^f3ofe8)zn((7$gg#d'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['https://online-examination-website-backend-1.onrender.com']
+ALLOWED_HOSTS = [
+    'online-examination-website-backend-1.onrender.com',  # Render hostname
+    'localhost',  # For local development
+    '127.0.0.1',  # For local development
+    ]
 
 
 # Application definition
